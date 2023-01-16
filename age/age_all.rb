@@ -6,7 +6,7 @@ maincorpus = corpus.split("-")[0]
 subcorpus = corpus.split("-")[1..-1].join("-")
 require 'open-uri'
 
-f = File.open("C:\\Sasha\\D\\DGU\\CassandraMy\\KorpApi\\authors\\#{maincorpus}\\#{subcorpus}2temp.tsv", "r:utf-8")
+f = File.open("C:\\Sasha\\D\\DGU\\CassandraMy\\KorpApi\\authors\\#{maincorpus}\\#{subcorpus}temp.tsv", "r:utf-8")
 threshold = 1000
 o = File.open("C:\\Sasha\\D\\DGU\\CassandraMy\\KorpApi\\authors\\#{maincorpus}\\#{subcorpus}_age_#{threshold}.tsv", "w:utf-8")
 o.puts "author\tntokens\tyear_of_birth"
